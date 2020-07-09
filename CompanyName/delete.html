@@ -1,0 +1,26 @@
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>Supplier Löschen</title>
+    </head>
+	<body>
+        <h1>Supplier löschen</h1>
+        <p>Löschen Sie die Supplier mit folgender SupplierID: </p>
+			<script type="text/javascript">
+				function conf(){
+				check = window.confirm("Wollen sie diesen Kunden wirklich löschen?");
+				return check;
+				}
+			//-->
+			</script>
+		<form action="delete.php" method="POST" onSubmit="return conf()">
+		<table>
+			<tr><td>SupplierID:</td>
+				<td><input name="SupplierID" type="text" size="2"></td></tr>
+			
+			<tr><td><input type="submit" value="Abschicken"></td> 
+            <td><input type="reset" value="Zurücksetzen"></td></tr>
+		</table>
+        </form>
+    </body>
+</html>
